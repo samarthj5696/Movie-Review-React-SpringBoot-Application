@@ -8,3 +8,5 @@ The frontend of the application is built using React, a popular JavaScript libra
 The database used in the application is MongoDB, a NoSQL database that provides a flexible data model and high scalability. It stores all the movie data including movie details, user reviews, and ratings.
 
 The "Movie Review" project is a great example of a full-stack web application that utilizes modern technologies to provide a seamless user experience. The project is open-source and available on GitHub, making it easy for developers to contribute to the project and extend its functionality.
+
+<img width="353" alt="5" src="https://github.com/samarthj5696/Movie-Review-React-SpringBoot-Application/blob/main/1.png">
