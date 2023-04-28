@@ -26,10 +26,7 @@ public class MovieController {
 
     @GetMapping(value = "/{ImdbId}")
     public Optional<Movies> GetByImdbId(@PathVariable String ImdbId){
+        System.out.println(movieService.getMovieById(ImdbId));
         return movieService.getMovieById(ImdbId);
-    }
-    @GetMapping(value = "/alls")
-    public String alls(){
-        return "hello";
     }
 }

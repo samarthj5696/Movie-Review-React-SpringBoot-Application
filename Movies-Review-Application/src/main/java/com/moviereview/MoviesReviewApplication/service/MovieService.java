@@ -13,11 +13,12 @@ import java.util.Optional;
 public class MovieService {
 
 
+    @Autowired
     private MovieRespository movieRespository;
 
-    public MovieService(MovieRespository movieRespository) {
-        this.movieRespository = movieRespository;
-    }
+//    public MovieService(MovieRespository movieRespository) {
+//        this.movieRespository = movieRespository;
+//    }
 
     public List<Movies> getAllMovies(){
 //        System.out.println(movieRespository.findAll());
@@ -25,6 +26,13 @@ public class MovieService {
         return movieRespository.findAll();
     }
      public Optional<Movies> getMovieById(String id){
+//        List<Movies>AllMovies=movieRespository.findAll();
+//        ObjectId Id=AllMovies.get(0).getId();
+//        for(int i=0;i<AllMovies.size();i++){
+//            if(id==AllMovies.get(i).getImdbId()){
+//                Id=AllMovies.get(i).getId();
+//            }
+//        }
         return movieRespository.findMoviesByImdbId(id);
      }
 }

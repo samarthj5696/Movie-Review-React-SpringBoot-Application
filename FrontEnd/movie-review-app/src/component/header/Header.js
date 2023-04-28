@@ -6,14 +6,16 @@ import { Nav } from "react-bootstrap";
 import { Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { dark } from "@mui/material/styles/createPalette";
+// import Hero from "../hero/Hero";
 
 const Header = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="/" style={{ color: "gold" }}>
+        {/* <Navbar.Brand href="/" style={{ color: "gold" }}>
           <FontAwesomeIcon icon={faVideoSlash}>Gold</FontAwesomeIcon>
-        </Navbar.Brand>
+        </Navbar.Brand> */}
+        <image src={"./icon.png"}></image>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
